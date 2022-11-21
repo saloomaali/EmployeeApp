@@ -13,6 +13,7 @@ public class Main {
             this.name = name;
             this.designation = designation;
             this. salary = salary;
+            this.companyName = companyName;
             this.phnNo = phnNo;
             this.emailId = emailId;
 
