@@ -11,12 +11,19 @@ class employee{
     String emailId;
     employee(){
         Scanner obj = new Scanner(System.in);
+        System.out.println("enter the code");
         code = obj.nextInt();
+        System.out.println("Enter name");
         name = obj.next();
+        System.out.println("Give the designation");
         designation = obj.next();
+        System.out.println("Enter the salary");
         salary = obj.nextDouble();
+        System.out.println("Enter company name");
         companyName = obj.next();
+        System.out.println("Enter phn No");
         phnNo= obj.nextLong();
+        System.out.println("Enter email Id");
         emailId = obj.next();
 
     }
