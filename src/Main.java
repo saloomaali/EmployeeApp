@@ -29,7 +29,7 @@ public class Main {
         ArrayList<employee> earr = new ArrayList<employee>();
 
         while (true) {
-            System.out.println("Select an option \n 1 - Add Employee \n 2 - View Employee \n 3 - Select an Employee \n" +
+            System.out.println("Select an option \n 1 - Add Employee \n 2 - View Employee \n 3 - Search an Employee \n" +
                     "4 - Delete an Employee \n 5 - Exit");
             Scanner input = new Scanner(System.in);
             int n = input.nextInt();
@@ -58,6 +58,17 @@ public class Main {
                             System.out.println(e);
                         }
                         break;
+
+                    case 3 :
+                        System.out.println("Enter the employee code");
+                        Scanner obj1 = new Scanner(System.in);
+                        int Ecode = obj1.nextInt();
+                        for (employee e : earr) {
+                            if (Ecode == e.code){
+                                System.out.println("Employee with employee code " + Ecode + "is " + e);
+                            }
+                        }
+                        }
                 }
 
             }
