@@ -75,6 +75,20 @@ public class Main {
                                 System.out.println("Employee with employee code " + Ecode + "is " + e);
                             }
                         }
+                        break;
+
+                    case 4 :
+
+                        System.out.println("Enter the employee code");
+                        Scanner obj2 = new Scanner(System.in);
+                        int ecode = obj2.nextInt();
+                        for (employee e : earr){
+                            if (ecode == e.code){
+                                earr.remove(e);
+                            }
+                        }
+                        break;
+
                         }
                 }
 
