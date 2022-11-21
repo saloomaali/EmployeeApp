@@ -67,15 +67,15 @@ public class Main {
 
                     case 2 :
                         System.out.println("Employee Details Showing");
-                        for (int i =0; i < earr.size() ; i++) {
-                            System.out.println("Printing details of employee " + i);
-                            System.out.println(earr.get(i).code);
-                            System.out.println(earr.get(i).name);
-                            System.out.println(earr.get(i).designation);
-                            System.out.println(earr.get(i).salary);
-                            System.out.println(earr.get(i).companyName);
-                            System.out.println(earr.get(i).phnNo);
-                            System.out.println(earr.get(i).emailId);
+                        for (Employee emp : earr) {
+                            System.out.println("Printing details of employee " );
+                            System.out.println(emp.code);
+                            System.out.println(emp.name);
+                            System.out.println(emp.designation);
+                            System.out.println(emp.salary);
+                            System.out.println(emp.companyName);
+                            System.out.println(emp.phnNo);
+                            System.out.println(emp.emailId);
 
                         }
                         break;
